@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {             
             steps {
                 sh "rm -rf parcel"
-                sh "git clone https://github.com/basavarajmallad/parcel.git"
+                sh "git clone https://github.com/k19-anavak/parcel.git "
 				 sh "cd parcel"
             }
         }
