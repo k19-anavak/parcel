@@ -1,11 +1,11 @@
 pipeline {
-  agent { label 'slave3' }	
+  agent { label 'slave01' }	
     stages {
         stage('Checkout') {             
             steps {
-                sh "rm -rf dhl"
-                sh "git clone https://github.com/basavarajmallad/dhl.git"
-				 sh "cd dhl"
+                sh "rm -rf parcel"
+                sh "git clone https://github.com/basavarajmallad/parcel.git"
+				 sh "cd parcel"
             }
         }
 		    stage('Set up Environment') {
